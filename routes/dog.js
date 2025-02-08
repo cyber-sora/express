@@ -8,7 +8,8 @@ router.get('/', (req, res) => {
     if (!error && response.statusCode == 200) {
       const data = JSON.parse(body); 
       res.json(data); 
-  };
-});
+    }
+ });
+})
 
 module.exports = router;
